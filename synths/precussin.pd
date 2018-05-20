@@ -1,0 +1,43 @@
+#N canvas 379 303 1253 545 10;
+#X obj 60 183 *~;
+#X obj 38 114 osc~;
+#X obj 31 61 mtof;
+#X obj 39 88 t f b;
+#X obj 101 146 lop~ 100;
+#X obj 210 84 hsl 128 15 0 100 0 0 empty empty attack 15 5 0 10 -262144
+-1 -1 1270 1;
+#X obj 210 114 hsl 128 15 0 1000 0 0 empty empty decay 15 5 0 10 -262144
+-1 -1 1270 1;
+#X obj 40 16 inlet;
+#X obj 420 35 loadbang;
+#X msg 419 60 10;
+#X msg 457 62 100;
+#X obj 65 213 outlet~;
+#X obj 136 17 inlet;
+#X obj 217 24 inlet;
+#X obj 80 115 env/trap 10 100 10;
+#X obj 210 99 hsl 128 15 0 1000 0 0 empty empty sustain 15 5 0 10 -262144
+-1 -1 0 1;
+#X msg 376 53 10;
+#X obj 180 22 inlet;
+#X connect 0 0 11 0;
+#X connect 1 0 0 0;
+#X connect 2 0 3 0;
+#X connect 3 0 1 0;
+#X connect 3 1 14 0;
+#X connect 4 0 0 1;
+#X connect 5 0 14 1;
+#X connect 6 0 14 3;
+#X connect 7 0 2 0;
+#X connect 8 0 9 0;
+#X connect 8 0 10 0;
+#X connect 8 0 16 0;
+#X connect 9 0 5 0;
+#X connect 10 0 6 0;
+#X connect 12 0 5 0;
+#X connect 13 0 6 0;
+#X connect 14 0 4 0;
+#X connect 15 0 14 2;
+#X connect 16 0 15 0;
+#X connect 17 0 15 0;
+#X coords 0 -1 1 1 133 51 2 210 81;

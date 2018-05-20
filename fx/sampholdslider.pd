@@ -1,0 +1,18 @@
+#N canvas 1126 509 624 501 10;
+#X obj 113 152 samphold~;
+#X obj 164 130 phasor~ 2000;
+#X obj 105 101 hsl 128 15 10 20000 0 0 empty empty Sample\ and\ Hold
+24 5 0 10 -262144 -1 -1 0 1;
+#X obj 31 45 inlet~;
+#X obj 147 181 outlet~;
+#X obj 169 58 inlet;
+#X obj 274 54 loadbang;
+#X msg 290 92 10000;
+#X connect 0 0 4 0;
+#X connect 1 0 0 1;
+#X connect 2 0 1 0;
+#X connect 3 0 0 0;
+#X connect 5 0 2 0;
+#X connect 6 0 7 0;
+#X connect 7 0 2 0;
+#X coords 0 -1 1 1 133 19 2 105 99;

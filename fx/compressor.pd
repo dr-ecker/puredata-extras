@@ -1,0 +1,29 @@
+#N canvas 882 595 729 422 10;
+#X obj 37 85 atan~;
+#X obj 37 62 *~;
+#X obj 131 181 hsl 128 15 1 100 0 0 empty empty cronch 15 5 0 10 -262144
+-1 -1 513 1;
+#X obj 37 116 *~;
+#X obj 131 198 hsl 128 15 0 1 0 0 empty empty output\ gain 15 5 0 10
+-262144 -1 -1 3810 1;
+#X obj 32 15 inlet~;
+#X obj 36 141 outlet~;
+#X obj 148 52 loadbang;
+#X msg 130 91 5;
+#X msg 165 91 0.3;
+#X text 165 163 Compressor;
+#X obj 120 28 inlet;
+#X obj 198 30 inlet;
+#X connect 0 0 3 0;
+#X connect 1 0 0 0;
+#X connect 2 0 1 1;
+#X connect 3 0 6 0;
+#X connect 4 0 3 1;
+#X connect 5 0 1 0;
+#X connect 7 0 8 0;
+#X connect 7 0 9 0;
+#X connect 8 0 2 0;
+#X connect 9 0 4 0;
+#X connect 11 0 2 0;
+#X connect 12 0 4 0;
+#X coords 0 -1 1 1 133 53 2 131 162;
